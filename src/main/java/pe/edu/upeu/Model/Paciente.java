@@ -33,8 +33,6 @@ public class Paciente {
 	private String direccion;
 	@Column(name="Telefono")
 	private String telefono;
-	public Paciente get() {
-		// TODO Auto-generated method stub
-		return null;
+	
 	}
 }
