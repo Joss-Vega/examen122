@@ -23,7 +23,7 @@ public class Paciente {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long idpaciente;
 
-	@Column(name="DNI")
+	@Column(name="Dni")
 	private String dni;
 	@Column(name="Nombres")
 	private String nombres;
