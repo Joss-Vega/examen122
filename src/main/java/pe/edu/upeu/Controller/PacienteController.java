@@ -53,9 +53,9 @@ import pe.edu.upeu.Services.PacienteService;
 		
 		@GetMapping("/paciente/{id}")
 		public ResponseEntity<Paciente> getUser(@PathVariable("id") long id){
-			Paciente paciente = paciente.read(id);
-				if(paciente.getIdpaciente()>0) {
-					return new ResponseEntity<>(paciente, HttpStatus.OK);
+			Paciente pacientes = paciente.read(id);
+				if(pacientes.getIdpaciente()>0) {
+					return new ResponseEntity<>(pacientes, HttpStatus.OK);
 				}else {
 				
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
